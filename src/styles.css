@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  @apply bg-gradient-to-b from-gray-50 to-gray-100 text-gray-800 font-sans;
+}
+
+
+.card {
+  @apply bg-white shadow-md hover:shadow-lg transition-shadow rounded-xl p-5 border border-gray-100;
+}
+
+.btn {
+  @apply inline-flex items-center justify-center px-4 py-2 font-medium rounded-lg transition;
+}
+
+.btn-primary {
+  @apply bg-blue-600 text-white hover:bg-blue-700;
+}
+
+.btn-secondary {
+  @apply bg-gray-100 hover:bg-gray-200 text-gray-700;
+}
+
+h2.section-title {
+  @apply text-2xl font-semibold mb-4 text-gray-800;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeIn {
+  animation: fadeIn 0.2s ease-out;
+}
+
+@keyframes slideFade {
+  from {
+    opacity: 0;
+    transform: translateY(25px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideFade {
+  animation: slideFade 0.4s ease-out;
+}
+
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideFade {
+  animation: slideFade 0.4s ease-out;
+}
+@keyframes slideFade {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.animate-slideFade {
+  animation: slideFade 0.4s ease-out;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-4px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-in-out;
+}
